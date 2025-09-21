@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter here..." id="s_inp">
+    <button id="s_btn">Search</button>
+    <br><br>
+    <button id="display">Display Data</button>
+    <table border="1px" cellspacing="" cellpadding="20" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Name
+                    <button onclick="ascendingByName()">ASC</button>
+                    <button onclick="descendingByName()">DES</button>
+                </th>
+                <th>Age
+                    <button onclick="ascendingByAge()">ASC</button>
+                    <button onclick="descendingByAge()">DES</button>
+                </th>
+                <th>Salary
+                    <button onclick="ascendingBySal()">ASC</button>
+                    <button onclick="descendingBySal()">DES</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+        <tfoot id="tfoot">
+
+        </tfoot>
+
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>

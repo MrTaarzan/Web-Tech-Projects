@@ -1,0 +1,240 @@
+JavaScript is a  dynamically typed programming language used for interactive web applications, supporting both client-side and server-side development
+
+****History Of JavaScript****
+------------------------------
+
+- In 1993 first web browser with user interface called Mosaic was released.
+- 1994 lead developers of mosaic founded a company Netscape and released a polished version of browser called Netscape Navigator.
+- To add the interactivity to these static web pages in browser they created new scripting language JavaScript in 1995.
+- In 1995 Microsoft created internet explorer browser and they realized that JS fundamentally changed the user experience of the web  and they wanted the same in internet explorer but no specification was there to refer. So they introduced new scripting language Jscript.
+- The difference made it difficult for developers to make their website works well in both browsers.
+- In 1996 Netscape submitted the JavaScript to ECMA International.
+- This ECMA made a committee to set a standards to follow for developers to build website so that all browser vendors could confirms to as it would help keep other implementation common across all the browsers.
+
+    
+# Versions of ECMAScript:
+
+1. 1997 → ECMAScript 1
+2. 1998 → ECMAScript 2
+3. 1999 → ECMAScript 3
+4. ECMAScript 4 never released.
+5. 2009 → ECMAScript 5
+6. 2015 → ECMAScript 2015 (ES6)
+7. One version every year since 2015 → 2024
+
+ES6 features
+-------------
+The let & const keyword
+Arrow Functions , destructuring of Array and objects,
+The ... Operator(spread operator)
+For/of loop and for in loop
+Map Objects and Set Objects
+Classes
+Promises
+Symbol
+Default Parameters
+Function Rest Parameter
+String.includes()
+String.startsWith()
+String.endsWith()
+Array entries()
+Array.from()
+Array keys()
+Array find()
+Array findIndex()
+Math.trunc
+Math.sign
+Math.cbrt
+Math.log2
+Math.log10
+Number.EPSILON
+Number.MIN_SAFE_INTEGER
+Number.MAX_SAFE_INTEGER
+Number.isInteger()
+Number.isSafeInteger()
+New Global Methods
+JavaScript Modules
+
+
+Now Each browsers has their own JS Engine to execute JS programs
+
+- V8 Engine → Chrome Engine by Google
+- Spider Monkey → Mozilla
+- JavaScript Core → Safari in apple
+- Chakra → Microsoft Edge.
+
+# Features of Javascript
+
+1. Simple and Lightweight
+--JavaScript is easy to learn and use, especially for creating dynamic web pages.
+--It runs directly in the browser without requiring installation or setup.
+
+2. Cross-Browser Compatibility
+--JavaScript works in all modern browsers like Chrome, Firefox, and Safari.
+--We can write code once and run it anywhere.
+
+3. Dynamic Typing
+--We don’t need to define the type of a variable (e.g., number, string).
+--JavaScript decides the type based on the value we assign.
+-- We can change the datatype of variables at runtime.
+
+4. Interpreted Language
+-- It will read the code line by line and execute there itself.
+-- If we have multiple errors in the different line it will stop execute at the first error, once we clear that error then it will execute next line of code.
+
+5.JavaScript is Synchronous
+--JavaScript is synchronous by nature, meaning it executes code in a single-threaded manner, one line at a time, in the order it appears. This is because JavaScript has a single-threaded execution model, where there is only one main thread running code.
+
+## Javascript Output Methods
+
+1. console.log();
+-- The console.log() method is used for logging messages to the console. Either we can see the output in the browser console or in our terminal
+Ex: console.log('Hello world'); // Hello world
+
+2. document.write();
+-- To use the document.write(), simply call this method and provide the content you want to be written to the document.
+-- Here we can write the html syntax using document.write() method;
+Ex: document.write('Hello world') --> this will diplay as simple text in the browser 
+    document.write('<h1>Hello world</h1>') --> This display the content as heading in the browser.
+
+3. alert();
+--The alert() method is used to display an alert box with a specified output (or message) and an OK button.
+Ex: alert('Hello world');
+
+4. print();
+-- The print() method is used to open the browser’s print dialog, allowing the user to print the current page.
+
+5. confirm();
+-- confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels the dialog.
+-- This will return boolean value based on the user action (true for 'okay' and false for 'cancel');
+Ex: let isElegible = confirm('Are you sure to visit website?');
+	console.log(isElegible) // true or false‍
+
+6. prompt();
+-- prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
+-- If the user left the field empty then the value will be null.
+-- The value returned from this dialog is string.
+Ex: let a=prompt('Enter the first number'); // 4
+    let b=prompt('Enter the second number'); // 5
+    let sum = a + b;
+    console.log(sum) // 45 not 9 because of string concatination 
+
+# Variables, Indentifiers and Keywords
+--------------------------------------
+
+1. Variables:
+Variables are the containers used to store data in JavaScript so that we can later access the data. JavaScript is a dynamically typed language so the type of variables is decided at runtime. Therefore there is no need to explicitly define the type of a variable. 
+We can Declare the variables by var, let and const keywords.
+
+2. Identifiers:
+* An identifier is a sequence of characters in the code that identifies a variable, function, or property.
+* All JavaScript identifiers are case sensitive.
+## Rules of Identifier
+-----------------------
+--> It should be a single word.It should not contain space between the characters. If it contain two word it must be        joined with underscore and don't use the hyphens. Ex: first_name
+--> It should not starts with number
+--> It should not start with special charcters except $ and _ 
+--> It can contain leading numbers Ex: name1 , a1 etc..
+--> Keywords cannot be used as Identifiers Ex: new,if,while,this etc..
+
+3. Keywords
+Keywords are reserved words that are part of the syntax in the programming language.
+Example: await,break,case,catch,class,const,continue,debugger,default,delete,yield etc..
+
+
+# Declaration of variables
+-------------------------
+In javascript we can declare a variable with three keywords var,let and const
+* let and const are introduced in ES6 and the variables declared with let and const are block scoped.
+* The variables declared with var is Function scoped.
+
+# Datatypes in Javascript
+------------------------
+1.Primitive Data Types:
+-->The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
+-->These are created in the stack memory. It holds the data directly in the stack memory and hence it is also known as Pass by value.
+-->These are immutable 
+Immutability is the state where values are immutable (that is, not able to be changed). A value is immutable when altering it is impossible. Primitive data types are immutable, as we discussed above.
+Example:
+   let num = 46;
+   let newNum = num;
+Looking at the code above, num was reassigned to newNum. Now both num and newNum have a value of 46. Changing the value on newNum will not alter the value on num.
+   newNum = 90;
+   clg(num) // 46;
+   clg(newnum) // 90;
+
+The following are the 7 primitive datatypes present in JavaScript.
+-------------------------------------------------------------------
+i) Number: Unlike other programming lang we don't have int, float and double. Ex: 1, 2.5, 0.5, 10.00
+
+ii) String:  JavaScript Strings are similar to sentences. They are made up of a list of characters. Represented with the help of single quote '' or double quotes "" or backticks ``
+
+iii) Boolean: Represent a logical entity and can have two values: true or false.
+
+iv) null: null is a special value in JavaScript that represents the deliberate(intentional) absence of any object value.
+	Indicate “No Value”: null explicitly shows that a variable or object property should have no value.
+	Reset or Clear Variables: Use null to reset a variable or remove its reference to an object.
+
+v) undefined: A variable that has not been assigned a value is undefined.
+	let a;
+	console.log(a) // undefined
+  These are the some situations where we will get undefined
+	* Uninitialized Variables
+	* Missing Function Return
+	* Non-Existent Object Properties or Array Elements
+
+vi) Symbol: Symbols return unique identifiers that can be used to add unique property keys to an object that won’t collide with keys of any other code that might add to the object.It is Introduced in ES6.
+	let a= Symbol("a");
+	let b=Symbol("a");
+	console.log(a==b) // it is false because symbol adds unique value to both a and b
+
+vii) BigInt: BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53-1.
+
+2.Primitive Data Types:	
+-->The data types that are derived from primitive data types of the JavaScript language are known as non-	primitive data types. It is also known as derived data types or reference data types.
+--> These data types are created in heap memory and the refrence of the data will be stored in the variables
+	created in stack memory. Hence it is called as refrence data types and pass by refrence.
+--> These are mutable in nature.
+	for example:
+	let arr = [1,2,4,5,7]
+	let arr2 = arr;
+	arr2[0] = 90;
+	clg(arr) // [90,2,4,5,7]
+	clg(arr2) // [90,2,4,5,7]
+
+i) Arrays:
+* Here we can store multiple elements under a single variable. These are written inside the square bracket and we can store both homogeneous and heterogeneous data.
+* Here we donot have fix sized array. The array length can be changed dynamically.
+* This is created in heap memory and its refrence is going to stored in stack memory.
+for example:
+	let arr = [1,2,4,5,7] --> homogeneous data
+	let arr1 = ["hello",{name:'xyx'},[1,2,3],true,2] --> heterogeneous data
+
+ii) Objects:
+* An object in Javascript is an entity having properties and methods. Everything is an object in javascript.
+* These are written inside the curly braces {} with the help of key:value pair
+* The values of object can be accessed with keys of the oject.
+* This is created in heap memory and its refrence is going to stored in stack memory.
+for example
+	let student = {
+			name:'rama',
+			age:25,
+			id:'NES'
+			marks:[20,25,30]
+		      }
+
+
+iii) Functions:
+* functions are the reusable block of code written inside a curly braces. It will reduce the repetation of the same logic and accept dynamic values and return the dynamic result based on the parameters.
+for Example : function sum(a,b){
+			return a+b
+			}
+		// calling a function
+		let result = sum(5,6)
+		console.log(result) // 11
+
+
+
+
+
+

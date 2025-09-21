@@ -1,0 +1,97 @@
+.image{
+    background-image: url(./vecteezy_an-omelet-with-cheese-and-herbs-on-a-black-plate_55960546.jpeg);
+    background-size: cover;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.796);
+    width: 700px;
+    height: 350px;
+}
+
+.popup{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    margin-top: 8%;
+    border: 1px solid rgba(218, 176, 140, 0.66);
+    border-radius: 25px;
+    background-color: rgba(246, 246, 246, 0.785);
+}
+
+body{
+    background-color: rgba(229, 196, 167, 0.551);
+}
+
+.header{
+    padding-left: 6%;
+    font-size: 50px;
+    font-family:cursive;
+}
+
+li{
+    line-height: 40px;
+    font-family:cursive;
+    color:rgb(1, 48, 0);
+}
+
+.time{
+    border: 1px solid rgba(247, 0, 255,0.1);
+    border-radius: 15px;
+    margin: 40px 50px;
+    background-color: rgba(189, 106, 192, 0.078);
+}
+
+.header2{
+    color:rgb(136, 0, 141);
+    text-shadow: 0 0 1px ;
+}
+
+h2{
+    padding-left: 6%;
+    font-size: 35px;
+    color:rgba(112, 74, 16, 0.932);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inglist{
+    margin:30px ;
+}
+
+p{
+    color:rgb(1, 48, 0);
+    margin-left: 6%;
+    font-size: 17px;
+    font-family:cursive;
+    line-height: 25px;
+}
+
+hr{
+    margin: 10px 50px;
+    border: 1px solid rgba(205, 205, 205, 0.671);
+}
+
+ol{
+    margin:30px;
+    margin-right: 50px;
+}
+
+table{
+    padding: 10px 50px;
+}
+
+td:not([class]),.var{
+    width: 1%;
+    border-bottom: 1px solid rgba(205, 205, 205, 0.671);
+    text-align: center;
+    line-height: 40px;
+}
+.var,.var2{
+    color: rgb(140, 49, 0);
+}
+.fat{
+    text-align: center;
+    line-height: 40px;
+}

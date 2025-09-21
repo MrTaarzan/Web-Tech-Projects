@@ -1,0 +1,86 @@
+
+body{
+    display: flex;
+}
+.leftside{
+    width: 75%;
+    border-right: 1px solid black;
+    margin-bottom: 3%;
+}
+
+.rightside{
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+body{
+    background-color:azure;
+}
+.photo{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 150px;
+    border-radius: 10%;
+}
+.header::before{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+.place{
+    display: inline;
+}
+.phone{
+    display: inline;
+}
+h4{
+    line-height: 1px;
+}
+.linkedin::before{
+    content: "";
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-image: url(./vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930480.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+.github::before{
+    content: "";
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background-image: url(./github_logo_icon_229278.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 5px;
+
+}
+.content{
+    word-spacing: 2px;
+    text-align:justify;
+    margin-right: 10%;
+    line-height: 25px;
+}
+hr{
+    margin-right:10%;
+}
+html{
+    margin-left: 5%;
+}
+li{
+    color:darkred;
+    line-height: 1px;
+}
+li{
+    line-height: 10px;
+}
+h4::before{
+    line-height: 500px;
+}

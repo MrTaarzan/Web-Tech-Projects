@@ -1,0 +1,75 @@
+*{
+    text-align: center;
+}
+.popup{
+    margin:auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3.5%;
+    margin-top: 5%;
+    width:370px;
+    height:590px;
+    background-color:#76767620;
+    
+
+}
+body{
+    background-color:#000000ec	;
+}
+img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+.name{
+    color:rgb(206, 214, 221);
+    font-family:sans-serif;
+    letter-spacing: 1px;
+    line-height: 1px;
+    font-size: 21px;
+    
+}
+.address{
+    color:rgb(151, 203, 55);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    background-color: none;
+}
+.role{
+    color:rgb(175, 171, 171);
+    line-height: 6px;
+    border:none;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+}
+button{
+    color:rgb(236, 236, 236);
+    padding: 8px 50px;
+    margin:10px 70px;
+    border-radius:7px;
+    background-color: rgb(54, 54, 54);
+    font-size: 15px;
+    font-family:cursive;
+    border: 2px solid black;
+}
+button:hover{
+    background-color: black;
+    border: 2px solid white;
+}
+button:active{
+    background-color: rgb(151, 203, 55);
+    color: black;
+}
+.github{
+    padding: 8px 84px;
+}
+.linkedin{
+    padding: 8px 78px;
+}
+.twitter{
+    padding: 8px 82px;
+}
+.instagram{
+    padding: 8px 72px;
+}
